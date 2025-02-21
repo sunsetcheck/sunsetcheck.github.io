@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunset Check</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff5e6, #ffe0b2);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        header {
+            flex-shrink: 0;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        nav a {
+            color: #ff5722;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            min-height: 0;
+            text-align: center;
+        }
+
+        .hero-content {
+            flex: 1;
+            min-width: 300px;
+            max-width: 900px;
+            color: #ff5722;
+            padding: 20px;
+        }
+
+        .hero-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+            color: #ff5722;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .store-buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .store-button {
+            background: transparent;
+            padding: 0;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            transition: transform 0.2s;
+        }
+
+        .store-button img {
+            height: 40px;
+            width: auto;
+        }
+
+        .store-button:hover {
+            transform: translateY(-2px);
+        }
+
+        footer {
+            flex-shrink: 0;
+            padding: 10px 20px;
+            color: #ff5722;
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            align-items: center;
+            margin-top: auto;
+        }
+
+        .copyright {
+            text-align: left;
+            opacity: 0.8;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            text-align: center;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            margin: 0 10px;
+            opacity: 0.8;
+            font-size: 14px;
+        }
+
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="SCLogo.png" alt="Sunset Check Logo" class="app-icon" style="height: 80px; width: auto;">
+        </div>
+        <nav>
+            <a href="support.html">Support</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Your Personal Sunset Assistant</h1>
+            <p>Transform the way you experience the sky with our innovative sunset and sunrise forecasting app.</p>
+            <div class="store-buttons">
+                <a href="https://apps.apple.com/us/app/sunset-check/id1234567890" class="store-button">
+                    <img src="appstore.png" alt="Download on App Store" height="40">
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="preview.png" alt="Preview Image" style="max-width: 40%; height: auto;">
+        </div>
+    </main>
+
+    <footer>
+        <span class="copyright">© 2025 Sunset Check</span>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Use</a>
+        </div>
+        <div></div>  <!-- Empty div for the third column -->
+    </footer>
+</body>
+</html> 
